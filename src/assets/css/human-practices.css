@@ -1,0 +1,106 @@
+@import url('./fonts.css');
+
+.hp-wrapper {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  padding: 2rem 1.5rem;
+  font-family: 'Montserrat', serif;
+  color: #eaeaea;
+  user-select: none;
+}
+
+.education-intro-title {
+  font-weight: 900;
+  font-size: 3.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #d178f2, #6bcdfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 6px solid #6bcdfd;
+  padding-bottom: 0.8rem;
+}
+.hp-section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hp-section-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow:
+    0 10px 22px rgba(0, 0, 0, 0.4),
+    inset 0 0 12px rgba(107, 205, 253, 0.2);
+  overflow: hidden;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.hp-section-button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d178f2;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: background 0.3s ease;
+}
+
+.hp-section-button:hover {
+  background: rgba(107, 205, 253, 0.15);
+}
+
+.hp-icon {
+  font-size: 1.5rem;
+  color: #6bcdfd;
+  font-weight: 900;
+}
+
+.hp-section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  padding: 0 1.5rem;
+  font-family: 'Montserrat', serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.hp-section-content.expanded {
+  padding-bottom: 1.5rem;
+  max-height: 1000px;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .hp-wrapper {
+    padding: 1rem 1rem 3rem;
+  }
+
+  .hp-main-title {
+    font-size: 2.8rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hp-section-button {
+    font-size: 1.3rem;
+    padding: 1rem 1.2rem;
+  }
+
+  .hp-section-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

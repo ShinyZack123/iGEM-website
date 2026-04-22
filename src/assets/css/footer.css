@@ -1,0 +1,59 @@
+@import url('./fonts.css');
+
+.footer-simple {
+  background: linear-gradient(135deg, #1c0f2a 0%, #1a0e45 100%);
+  color: #9dd7f6; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; 
+  text-align: center;
+  padding: 2rem 1rem;
+  user-select: none;
+  letter-spacing: 0.05em;
+}
+
+.footer-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer-simple a {
+  color: #6bcdfd; 
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-simple a:hover,
+.footer-simple a:focus {
+  color: #f9a93a; 
+  text-decoration: underline;
+  outline: none;
+}
+
+.footer-thanks strong {
+  color: #f9a93a; 
+  font-weight: 700;
+}
+
+.footer-source,
+.footer-socials,
+.footer-license {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  user-select: text;
+  font-weight: 400;
+}
+
+.footer-socials {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #6bcdfd; 
+  cursor: default;
+}
+
+@media (max-width: 480px) {
+  .footer-simple {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,88 @@
+@import url('./fonts.css');
+
+.header-hero {
+  background-image: 
+    linear-gradient(rgba(10,27,51,0.8), rgba(16,37,77,0.7)),
+    url("https://static.igem.wiki/teams/5602/contribution/parts18srrna.webp");
+  background-size: cover;             
+  background-position: right center;   
+  background-repeat: no-repeat;
+
+  padding: 4.75rem 4rem 3.25rem;
+  min-height: 10vh;
+  font-family: 'Montserrat';
+  user-select: none;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-top: 6px solid #6bcdfd;
+  border-bottom: 6px solid #6bcdfd;
+  box-shadow: 0 4px 12px rgba(42, 157, 143, 0.3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header-container {
+  max-width: 900px;
+  padding-left: 4rem;
+  flex: 1 1 auto;
+}
+
+.header-title {
+  font-weight: 900;
+  font-size: clamp(4rem, 5vw, 5.5rem);
+  margin-top: 2.5rem;
+  margin: 2 0 2rem 0;
+  line-height: 1.05;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  background: linear-gradient(90deg, #d178f2 17%, #b454f0 25%, #7dbcfb 50%, #6bcdfd 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.header-lead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  color: #d178f2;
+  margin-top: 0.7rem;
+  opacity: 0.9;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 960px) {
+  .header-hero {
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-hero {
+    flex-direction: column;
+    padding: 4.5rem 2rem 3.25rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header-container {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .header-title {
+    font-size: clamp(2.8rem, 7vw, 4rem);
+  }
+
+  .header-lead {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}

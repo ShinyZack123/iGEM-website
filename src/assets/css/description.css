@@ -1,0 +1,124 @@
+@import url('./fonts.css'); 
+
+.project-page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.sidebar-nav {
+  position: sticky;
+  top: 6rem;
+  padding-top: 1rem;
+  min-width: 180px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.sidebar-nav li.active {
+  background-color: rgba(107, 205, 253, 0.15);
+  border-radius: 6px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #d0c4ff;
+  font-weight: bold;
+  transition: color 0.3s, padding-left 0.3s;
+  display: block;
+  padding-left: 0.5rem;
+}
+
+.sidebar-nav li.active > a {
+  color: #6bcdfd;
+  border-left: 4px solid #6bcdfd;
+  padding-left: 1rem;
+}
+
+.sidebar-nav a:hover {
+  color: #f5a9ff;
+}
+
+
+.project-content {
+  flex: 1;
+}
+
+.project-context-wrapper {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  padding: 2rem 1.5rem;
+  font-family: 'Montserrat', ;
+  color: #eaeaea;
+}
+
+
+.project-context-title {
+  font-weight: 900;
+  font-size: 4rem; 
+  letter-spacing: 0.18em; 
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #d178f2, #6bcdfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 6px solid #6bcdfd;
+  padding-bottom: 0.8rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.education-intro-title {
+  font-weight: 900;
+  font-size: 3.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #d178f2, #6bcdfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 6px solid #6bcdfd;
+  padding-bottom: 0.8rem;
+}
+.project-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .project-page-wrapper {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .sidebar-nav {
+    position: static;
+    min-width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .project-content {
+    max-width: 100%;
+  }
+
+  .project-context-title {
+    font-size: 3rem; 
+    white-space: normal;
+  }
+}

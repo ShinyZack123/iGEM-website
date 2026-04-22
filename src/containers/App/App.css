@@ -1,0 +1,135 @@
+:root {
+  --bg-color: #1e1e2f;;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+#root {
+  display: flex;
+}
+
+.app-layout {
+  flex: 1 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+
+.app-main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  transition: background-color 0.3s ease;
+}
+
+body.dyslexic-mode {
+  letter-spacing: 0.008em;
+}
+
+body.dyslexic-mode p .dyslexic-word,
+body.dyslexic-mode li .dyslexic-word {
+  display: inline;
+  font-weight: inherit;
+  white-space: nowrap;
+}
+
+body.dyslexic-mode p .dyslexic-first-letter,
+body.dyslexic-mode li .dyslexic-first-letter {
+  display: inline;
+  font-weight: 600;
+  letter-spacing: 0.003em;
+  margin-right: 0.01em;
+  opacity: 0.88;
+  text-shadow: 0.01em 0 currentColor;
+}
+
+body.dyslexic-mode p .dyslexic-rest-of-word,
+body.dyslexic-mode li .dyslexic-rest-of-word {
+  display: inline;
+  font-weight: inherit;
+}
+
+body.dyslexic-mode p strong .dyslexic-first-letter,
+body.dyslexic-mode p em .dyslexic-first-letter,
+body.dyslexic-mode li strong .dyslexic-first-letter,
+body.dyslexic-mode li em .dyslexic-first-letter {
+  font-weight: 600;
+  opacity: 1;
+}
+
+body.high-contrast-mode {
+  --bg-color: #000;
+  background-color: #000;
+  color: #ffeb3b;
+}
+
+body.high-contrast-mode .app-layout,
+body.high-contrast-mode .app-main {
+  background-color: #000;
+  color: inherit;
+}
+
+body.high-contrast-mode .app-main :where(p, li, span, div, section, article, header, footer, h1, h2, h3, h4, h5, h6, label, table, th, td, caption, blockquote, figure, figcaption, strong, em, b, i, mark, small) {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+body.high-contrast-mode button,
+body.high-contrast-mode input,
+body.high-contrast-mode textarea,
+body.high-contrast-mode select {
+  background-color: #111 !important;
+  color: inherit !important;
+  border-color: #ffeb3b !important;
+}
+
+body.high-contrast-mode a {
+  color: #fff59d;
+}
+
+body.high-contrast-mode a:hover,
+body.high-contrast-mode a:focus {
+  color: #ffff8d;
+}
+
+body.high-contrast-mode table,
+body.high-contrast-mode td,
+body.high-contrast-mode th {
+  border-color: #ffeb3b;
+}
+
+body.high-contrast-mode ::selection {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+body.high-contrast-mode hr {
+  border-color: #ffeb3b;
+}
+
+body.high-contrast-mode .app-main :where(code, pre) {
+  background-color: #111 !important;
+  color: inherit !important;
+  border-color: #ffeb3b;
+}
